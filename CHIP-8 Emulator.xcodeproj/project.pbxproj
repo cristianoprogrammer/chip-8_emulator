@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E506B992118C7E70090B3BD /* CHIP8_ROM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E506B972118C7E70090B3BD /* CHIP8_ROM.cpp */; };
+		4EB17E30212DEA9C00EBFE85 /* games in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EB17E2F212DEA9100EBFE85 /* games */; };
+		4EE167A22239981A002C942E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE167A12239981A002C942E /* SDL2.framework */; };
+		4EFC53E12118B0CF000A7074 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC53E02118B0CF000A7074 /* main.cpp */; };
+		4EFC53E92118B189000A7074 /* CHIP8_CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC53E72118B189000A7074 /* CHIP8_CPU.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E506B9B2118E2B60090B3BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				4EB17E30212DEA9C00EBFE85 /* games in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFC53DB2118B0CF000A7074 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4E506B972118C7E70090B3BD /* CHIP8_ROM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CHIP8_ROM.cpp; sourceTree = "<group>"; };
+		4E506B982118C7E70090B3BD /* CHIP8_ROM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CHIP8_ROM.hpp; sourceTree = "<group>"; };
+		4EB17E2F212DEA9100EBFE85 /* games */ = {isa = PBXFileReference; lastKnownFileType = folder; path = games; sourceTree = "<group>"; };
+		4EDED95D223AB8E200AFE27D /* libimgui_sdl_osx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libimgui_sdl_osx.dylib; sourceTree = "<group>"; };
+		4EE167A12239981A002C942E /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		4EFC53DD2118B0CF000A7074 /* CHIP-8 Emulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CHIP-8 Emulator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFC53E02118B0CF000A7074 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4EFC53E72118B189000A7074 /* CHIP8_CPU.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CHIP8_CPU.cpp; sourceTree = "<group>"; };
+		4EFC53E82118B189000A7074 /* CHIP8_CPU.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CHIP8_CPU.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EFC53DA2118B0CF000A7074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE167A22239981A002C942E /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E506B9F211A16250090B3BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EDED95D223AB8E200AFE27D /* libimgui_sdl_osx.dylib */,
+				4EE167A12239981A002C942E /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EFC53D42118B0CF000A7074 = {
+			isa = PBXGroup;
+			children = (
+				4EFC53DF2118B0CF000A7074 /* CHIP-8 Emulator */,
+				4EFC53DE2118B0CF000A7074 /* Products */,
+				4E506B9F211A16250090B3BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EFC53DE2118B0CF000A7074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EFC53DD2118B0CF000A7074 /* CHIP-8 Emulator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EFC53DF2118B0CF000A7074 /* CHIP-8 Emulator */ = {
+			isa = PBXGroup;
+			children = (
+				4EB17E2F212DEA9100EBFE85 /* games */,
+				4EFC53E02118B0CF000A7074 /* main.cpp */,
+				4EFC53E72118B189000A7074 /* CHIP8_CPU.cpp */,
+				4EFC53E82118B189000A7074 /* CHIP8_CPU.hpp */,
+				4E506B972118C7E70090B3BD /* CHIP8_ROM.cpp */,
+				4E506B982118C7E70090B3BD /* CHIP8_ROM.hpp */,
+			);
+			path = "CHIP-8 Emulator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EFC53DC2118B0CF000A7074 /* CHIP-8 Emulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFC53E42118B0CF000A7074 /* Build configuration list for PBXNativeTarget "CHIP-8 Emulator" */;
+			buildPhases = (
+				4EFC53D92118B0CF000A7074 /* Sources */,
+				4EFC53DA2118B0CF000A7074 /* Frameworks */,
+				4EFC53DB2118B0CF000A7074 /* CopyFiles */,
+				4E506B9B2118E2B60090B3BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CHIP-8 Emulator";
+			productName = "CHIP-8 Emulator";
+			productReference = 4EFC53DD2118B0CF000A7074 /* CHIP-8 Emulator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EFC53D52118B0CF000A7074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tydresdevelopment;
+				TargetAttributes = {
+					4EFC53DC2118B0CF000A7074 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4EFC53D82118B0CF000A7074 /* Build configuration list for PBXProject "CHIP-8 Emulator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EFC53D42118B0CF000A7074;
+			productRefGroup = 4EFC53DE2118B0CF000A7074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EFC53DC2118B0CF000A7074 /* CHIP-8 Emulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EFC53D92118B0CF000A7074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFC53E92118B189000A7074 /* CHIP8_CPU.cpp in Sources */,
+				4E506B992118C7E70090B3BD /* CHIP8_ROM.cpp in Sources */,
+				4EFC53E12118B0CF000A7074 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EFC53E22118B0CF000A7074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4EFC53E32118B0CF000A7074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4EFC53E52118B0CF000A7074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWVKEXVLU2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/CHIP-8 Emulator\"",
+					"$(PROJECT_DIR)/**",
+					"@executable_path",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"NNGUI_SDL=1",
+					"$(inherited)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4EFC53E62118B0CF000A7074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWVKEXVLU2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/CHIP-8 Emulator\"",
+					"$(PROJECT_DIR)/**",
+					"@executable_path",
+					"$(PROJECT_DIR)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EFC53D82118B0CF000A7074 /* Build configuration list for PBXProject "CHIP-8 Emulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFC53E22118B0CF000A7074 /* Debug */,
+				4EFC53E32118B0CF000A7074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFC53E42118B0CF000A7074 /* Build configuration list for PBXNativeTarget "CHIP-8 Emulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFC53E52118B0CF000A7074 /* Debug */,
+				4EFC53E62118B0CF000A7074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EFC53D52118B0CF000A7074 /* Project object */;
+}
